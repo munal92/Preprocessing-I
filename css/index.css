@@ -1,1 +1,364 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.displayflx {
+  display: flex;
+  flex-direction: column;
+}
+.bordertble {
+  border: 1px solid grey;
+}
+a {
+  text-decoration: none;
+}
+body {
+  max-width: 880px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+body nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  margin: 30px 0;
+}
+body a {
+  color: black;
+  width: 14%;
+  text-align: center;
+}
+header {
+  margin-bottom: 30px;
+  border: 1px solid grey;
+  background: #E9ECEF;
+  padding: 35px;
+}
+header img {
+  width: 30%;
+}
+header h1 {
+  font-size: 48px;
+}
+header h2 {
+  font-size: 22px;
+}
+header button {
+  background: grey;
+  color: white;
+  width: 24%;
+  height: 38px;
+  font-size: 18px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+.content-sections {
+  display: flex;
+  align-content: space-around;
+  justify-items: space-around;
+  height: 30%;
+}
+.content-sections h1 {
+  font-size: 34px;
+  font-weight: bold;
+}
+.content-sections p {
+  font-size: 20px;
+}
+.alt-section {
+  margin: 20px 1%;
+  width: 100%;
+}
+.tablo-section {
+  margin: 20px 1%;
+  width: 100%;
+}
+.tablo-section p {
+  border: 1px solid grey;
+  padding: 12px;
+}
+table,
+th,
+td {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 70px;
+}
+table .bckgrey,
+th .bckgrey,
+td .bckgrey {
+  background: #E9ECEF;
+}
+table th,
+th th,
+td th,
+table td,
+th td,
+td td {
+  padding: 5px;
+  text-align: left;
+}
+caption {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 6px;
+}
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid grey;
+  background: grey;
+  color: white;
+  padding: 10px;
+}
+address {
+  margin: 20px 0;
+}
+address p {
+  padding: 5px 0;
+}
+@media (max-width: 500px) {
+  header {
+    margin-bottom: 30px;
+    border: 1px solid grey;
+    background: #E9ECEF;
+    padding: 35px;
+  }
+  header img {
+    width: 40%;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header h2 {
+    font-size: 18px;
+  }
+  header button {
+    background: grey;
+    color: white;
+    width: 24%;
+    height: 38px;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-radius: 8px;
+  }
+  body {
+    max-width: 880px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  body nav {
+    display: flex;
+    align-content: space-around;
+    justify-items: space-around;
+    align-items: center;
+    height: 30%;
+    flex-direction: column;
+  }
+  body a {
+    color: grey;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+  }
+  .content-sections {
+    margin-bottom: 70px;
+  }
+  .alt-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .alt-section p {
+    font-size: 15px;
+  }
+  .tablo-section {
+    margin: 20px 1%;
+    width: 100%;
+  }
+  .tablo-section p {
+    border: 1px solid grey;
+    padding: 12px;
+    font-size: 15px;
+  }
+  table {
+    padding: 13em;
+    margin: 0;
+  }
+  table,
+  th,
+  td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 70px;
+  }
+  table .bckgrey,
+  th .bckgrey,
+  td .bckgrey {
+    background: #E9ECEF;
+  }
+  table th,
+  th th,
+  td th,
+  table td,
+  th td,
+  td td {
+    padding: 5px;
+    text-align: left;
+  }
+  caption {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 6px;
+  }
+}

@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +55,295 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: "Titillium Web", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+ 
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+@specialgrey: #E9ECEF;
+@black: black;
+@width: 10px;
+@height:30px;
+
+.displayflx{
+	display: flex;
+	flex-direction: column;
+}
+.bordertble{
+	border: 1px solid grey;
+}
+a {
+	text-decoration: none;
+  }
+  
+  
+  body {
+	max-width: 880px;
+	width: 90%;
+	.displayflx();
+	justify-content: flex-start;
+	margin: 0 auto;
+		nav{
+
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			height: 80px;
+			margin: @height 0;
+
+		}
+
+		a{
+			color:@black;
+			width: 14%;
+			text-align: center;
+
+		}
+  }
+  
+  
+  header {
+	
+	margin-bottom: 30px;
+	.bordertble();
+	background: @specialgrey;
+	padding: @height + 5px;
+
+	img{
+		width: 30%;
+		
+	}
+
+	h1{
+		font-size: 48px;
+	}
+	h2{
+		font-size: 22px;
+	}
+			button{
+			background: grey;
+			color: white;
+			width: 24%;
+			height: 38px;
+			font-size: 18px;
+			border: 1px solid grey;
+			border-radius: 8px;
+			}
+	  }
+
+
+	  .content-sections {
+		display: flex;
+		
+        align-content: space-around;
+        justify-items: space-around;
+        
+		height: 30%;
+		 h1{
+			font-size:34px;
+			font-weight: bold;
+		 }
+		 p{
+			font-size:20px;
+		 }
+	  }
+	  
+	  .alt-section {
+		margin: 20px 1%;
+		width: 100%;
+		
+		
+	}
+		.tablo-section{
+			margin: 20px 1%;
+			width: 100%;
+
+
+			p{
+				border: 1px solid grey;
+				padding: 12px;
+			}
+		}
+  
+  
+		table, th, td {
+			border-bottom: 1px solid @black;
+			border-collapse: collapse;
+			margin-top: 70px;
+
+			.bckgrey{
+				background: @specialgrey;
+			}
+			th, td {
+				padding: 5px;
+				text-align: left;
+			  }
+		  }
+		  
+		  caption{
+			text-align: left;
+			font-size:24px;
+			font-weight: bold;
+			margin:6px;
+		}
+		  
+
+
+
+		.copyright{
+			padding: 20px 0;
+			text-align:center;
+			.bordertble();
+			background: grey;
+			color: white;
+			padding:10px;
+
+		}
+
+		address {
+			margin: 20px 0;
+			p {
+				padding: 5px 0;
+			  }
+		  }
+		  
+		  @media (max-width: 500px) {
+
+			
+				@font-size: 15px;
+			
+
+
+			header {
+	
+				margin-bottom: 30px;
+				.bordertble();
+				background: @specialgrey;
+				padding: @height + 5px;
+			
+				img{
+					width: 40%;
+					
+				}
+			
+				h1{
+					font-size: 40px;
+				}
+				h2{
+					font-size: 18px;
+				}
+						button{
+						background: grey;
+						color: white;
+						width: 24%;
+						height: 38px;
+						font-size: 12px;
+						border: 1px solid grey;
+						border-radius: 8px;
+						}
+				  }
+			
+		
+
+			body {
+				max-width: 880px;
+				width: 90%;
+				.displayflx();
+				justify-content: flex-start;
+				margin: 0 auto;
+					nav{
+			
+						display: flex;
+						align-content: space-around;
+						justify-items: space-around;
+						align-items: center;
+						height: 30%;
+						
+						flex-direction: column;
+			
+					}
+			
+					a{
+						color: grey;
+						width: 100%;
+						text-align: center;
+						border-bottom: 1px solid grey;
+						padding:5px;
+					}
+			  }
+			  
+			  .content-sections{
+				  margin-bottom: 70px;
+				  
+			  }
+
+			  .alt-section {
+				display: flex;
+				flex-direction: column;
+				p{
+
+					font-size: @font-size;
+				}
+				
+			}
+				.tablo-section{
+					margin: 20px 1%;
+					width: 100%;
+					
+		
+					p{
+						border: 1px solid grey;
+						padding: 12px;
+						font-size: @font-size;
+					}
+				}
+
+
+			table{
+				padding: 13em;
+				margin:0;
+				
+			}
+				
+				table, th, td {
+					border-bottom: 1px solid @black;
+					border-collapse: collapse;
+					margin-top: 70px;
+		
+					.bckgrey{
+						background: @specialgrey;
+					}
+					th, td {
+						padding: 5px;
+						text-align: left;
+					  }
+				  }
+				  
+				  caption{
+					text-align: left;
+					font-size:24px;
+					font-weight: bold;
+					margin:6px;
+				}
+				  
+
+
+
+
+
+
+
+
+
+
+
+		  }
